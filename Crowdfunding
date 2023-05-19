@@ -80,4 +80,8 @@ contract Crowdfunding {
         campaign.state = State.PaidOut;
         emit CampaignPaidOut(campaignId);
     }
+     
+
+     receive() external payable {}
 }
+
